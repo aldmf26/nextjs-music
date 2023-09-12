@@ -73,14 +73,9 @@ export default function Home() {
             <li>
               <a
                 target="_blank"
-                href="https://www.youtube.com/channel/UCJk3cbCm938_3gYXA-9pCxw"
+                href="https://open.spotify.com/artist/1n3Xw0iXi4YEIM2ILuV4vb?si=YMJUqdeSRce5r416ed1pGw"
               >
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/soundcloud.png"
-                  alt="soundcloud"
-                />
+                <img width="48" height="48" src="https://img.icons8.com/color/48/spotify--v1.png" alt="spotify--v1"/>
               </a>
             </li>
           </ul>
