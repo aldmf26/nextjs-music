@@ -50,11 +50,13 @@ export default function Home() {
             <li class="font-semibold text-[#E6E2DC]-900">Home</li>
             <li class="font-semibold text-[#E6E2DC]-900">genres</li>
             <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/aldiiimf"
-              >
-                <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+              <a target="_blank" href="https://www.instagram.com/aldiiimf">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/fluency/48/instagram-new.png"
+                  alt="instagram-new"
+                />
               </a>
             </li>
             <li>
@@ -75,7 +77,12 @@ export default function Home() {
                 target="_blank"
                 href="https://open.spotify.com/artist/1n3Xw0iXi4YEIM2ILuV4vb?si=YMJUqdeSRce5r416ed1pGw"
               >
-                <img width="48" height="48" src="https://img.icons8.com/color/48/spotify--v1.png" alt="spotify--v1"/>
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/color/48/spotify--v1.png"
+                  alt="spotify--v1"
+                />
               </a>
             </li>
           </ul>
@@ -130,8 +137,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div></div>
       </nav>
     </main>
   );
