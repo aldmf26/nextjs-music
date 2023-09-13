@@ -7,10 +7,10 @@ export default function page() {
       <Navbar />
       <main className="grid place-items-center bg-gradient-to-t from-blue-200 to-grey-900 p-5">
         <div>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-200 mb-5">
+          <h1 className="px-10 text-1xl sm:text-lg md:text-2xl font-bold text-gray-200 mb-5">
             Explore Tracks
           </h1>
-          <section className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+          <section className="px-10 grid grid-cols-2 sm:grid-cols-5 gap-4">
             <div className="bg-gray-900 shadow-lg rounded p-2">
               <div className="group relative">
                 <img
