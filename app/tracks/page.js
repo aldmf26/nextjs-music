@@ -2,6 +2,23 @@ import Navbar from "@/components/Navbar";
 import React from "react";
 
 export default function page() {
+  const cardsData = [
+    {
+      imageSrc:
+        "https://upload.wikimedia.org/wikipedia/en/f/f1/Tycho_-_Epoch.jpg",
+      title: "Ginto",
+      bpm: "140",
+      free: "Free",
+    },
+    {
+      imageSrc:
+        "https://upload.wikimedia.org/wikipedia/en/f/f1/Tycho_-_Epoch.jpg",
+      title: "Dive",
+      bpm: "160",
+      free: "",
+    },
+  ];
+
   return (
     <div>
       <Navbar />
@@ -11,87 +28,49 @@ export default function page() {
             Explore Tracks
           </h1>
           <section className="px-10 grid grid-cols-2 sm:grid-cols-5 gap-4">
-            <div className="bg-gray-900 shadow-lg rounded p-2">
-              <div className="group relative">
-                <img
-                  className="w-full md:w-72 block rounded"
-                  src="https://upload.wikimedia.org/wikipedia/en/f/f1/Tycho_-_Epoch.jpg"
-                  alt
-                />
-                <div className="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
-                  <button className="hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={40}
-                      height={40}
-                      fill="currentColor"
-                      className="bi bi-play-circle-fill"
-                      viewBox="0 0 16 16"
+            {cardsData.map((card, i) => (
+              <div className="bg-gray-900 shadow-lg rounded p-2 relative">
+                <div className="group relative">
+                  <img
+                    className="w-full md:w-72 block rounded"
+                    src={card.imageSrc}
+                    alt=""
+                  />
+                  <div className="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
+                    <button className="hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={40}
+                        height={40}
+                        fill="currentColor"
+                        className="bi bi-play-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div className="p-4 flex justify-between items-center">
+                  <div>
+                    <h3 className="text-white text-lg">{card.title}</h3>
+                    <span className="text-gray-400 text-sm">
+                      {card.bpm} BPM
+                    </span>
+                  </div>
+                  {card.free !== "" && (
+                    <span
+                      href="#"
+                      class="flex items-center justify-center px-3 h-8 text-xs font-medium bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-warnaTeksPrimary-700 dark:bg-gray-800 dark:border-gray-700 dark:text-warnaTeksPrimary-400 dark:hover:bg-gray-700 dark:hover:text-white"
                     >
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                    </svg>
-                  </button>
+                      
+                      {card.free}
+                      
+                    </span>
+                  )}
                 </div>
               </div>
-              <div className="p-5">
-                <h3 className="text-white text-lg">Epoch</h3>
-                <p className="text-gray-400">Tycho</p>
-              </div>
-            </div>
-            <div className="bg-gray-900 shadow-lg rounded p-2">
-              <div className="group relative">
-                <img
-                  className="w-full md:w-72 block rounded"
-                  src="https://upload.wikimedia.org/wikipedia/en/c/ca/Tycho_-_Awake.png"
-                  alt
-                />
-                <div className="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
-                  <button className="hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={40}
-                      height={40}
-                      fill="currentColor"
-                      className="bi bi-play-circle-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="p-5">
-                <h3 className="text-white text-lg">Awake</h3>
-                <p className="text-gray-400">Tycho</p>
-              </div>
-            </div>
-            <div className="bg-gray-900 shadow-lg rounded p-2">
-              <div className="group relative">
-                <img
-                  className="w-full md:w-72 block rounded"
-                  src="https://upload.wikimedia.org/wikipedia/en/1/11/Dive_tycho_album.jpg"
-                  alt
-                />
-                <div className="absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly">
-                  <button className="hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={40}
-                      height={40}
-                      fill="currentColor"
-                      className="bi bi-play-circle-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="p-5">
-                <h3 className="text-white text-lg">Dive</h3>
-                <p className="text-gray-400">Tycho</p>
-              </div>
-            </div>
+            ))}
           </section>
         </div>
       </main>
