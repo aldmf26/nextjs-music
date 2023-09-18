@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const activeClass = "text-[#FFFFF8] border-b border-white";
+  const activeClass = "text-[#FFFFF8] border-b border-black";
   const defaultClass = "text-warnaTeksSblmHover";
 
   return (
