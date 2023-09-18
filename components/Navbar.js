@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div>
       {/* navbar 1 */}
-      <nav className="flex justify-between px-20 py-3 items-center bg-warnaPrimary">
+      <nav className="flex justify-between px-20 py-3 items-center bg-warnaBg">
         <h1 className="text-xl text-warnaTeksPrimary-800 font-bold">
           <Link href="/">ALdMF Music</Link>
         </h1>
@@ -121,7 +121,7 @@ export default function Navbar() {
       </nav>
 
       {/* navbar 2 */}
-      <nav className="flex justify-start px-20 py-2 items-center bg-warnaPrimary border-t border-warnaSecondary">
+      <nav className="flex justify-start px-20 py-2 items-center bg-warnaBg border-t border-warnaSecondary">
         <div className="flex items-center"></div>
         <div className="flex items-center">
           <ul className="flex items-center space-x-6">

@@ -22,14 +22,14 @@ export default function page() {
   return (
     <div>
       <Navbar />
-      <main className="grid place-items-center bg-gradient-to-t from-blue-200 to-grey-900 p-5">
+      <main className="grid place-items-center bg-warnaBg p-5">
         <div>
           <h1 className="px-10 text-1xl sm:text-lg md:text-2xl font-bold text-gray-200 mb-5">
             Explore Tracks
           </h1>
           <section className="px-10 grid grid-cols-2 sm:grid-cols-5 gap-4">
             {cardsData.map((card, i) => (
-              <div className="bg-gray-900 shadow-lg rounded p-2 relative">
+              <div className="bg-black shadow-lg rounded p-1 relative">
                 <div className="group relative">
                   <img
                     className="w-full md:w-72 block rounded"
@@ -51,7 +51,7 @@ export default function page() {
                     </button>
                   </div>
                 </div>
-                <div className="p-4 flex justify-between items-center">
+                <div className="p-4 bg-warnaSecondary flex justify-between items-center">
                   <div>
                     <h3 className="text-white text-lg">{card.title}</h3>
                     <span className="text-gray-400 text-sm">
@@ -74,29 +74,6 @@ export default function page() {
           </section>
         </div>
       </main>
-
-      {/* <div className="flex items-center py-10 px-5">
-        <div class="w-1/6 h-60 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img
-              class="p-8 rounded-t-lg"
-              src="https://images.unsplash.com/photo-1618537993538-0690d0976a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFwZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-              alt="product image"
-            />
-          </a>
-          <div class="flex justify-center pb-5">
-            <a href="#">
-              <span class="bg-blue-100 items-center text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-4">
-                128 BPM
-              </span>
-              <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-                Ginto
-              </h5>
-            </a>
-          
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }

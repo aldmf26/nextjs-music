@@ -6,7 +6,7 @@ export default function Home() {
       <Navbar />
 
       {/* jumbotron */}
-      <nav class="bg-cover bg-center bg-[url('../public/img/bgnav.webp')] flex justify-between px-20 py-16 items-center bg-[#D1D5DB]">
+      <nav class="bg-cover bg-center  flex justify-between px-20 py-16 items-center">
         <div class="flex items-center">
           <div>
             <h1 class="mb-8 uppercase text-3xl font-extrabold leading-none tracking-tight text-grey-900 md:text-4xl lg:text-4xl dark:text-grey">

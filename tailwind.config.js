@@ -13,6 +13,13 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
+        'warnaBg': '#232946',
+        'warnaHeadline': '#fffffe',
+        'warnaParagraph': '#a7a9be',
+        'warnaButton': '#ff8906',
+        'warnaSecondary': '#f25f4c',
+        'warnaTertiary': '#e53170',
+
         'warnaPrimary': '#141617',
         'warnaSecondary': '#1F2937',
         'warnaHover': '#F8FBFF',
